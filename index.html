@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>PokeNexo</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-verde color">
+      <div class="container">
+        <a class="navbar-brand mr-auto" href="#">PokeNexo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pokédex</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">inciales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="d-flex justify-content-center">
+      PokeNexo: Explorando el Mundo Pokémon cevoluciones
+    </h1>
+
+    <div class="container pokemons d-flex justify-content-center">
+      <div class="bd-example">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!--carucel de pokemons en js        -->
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+            id="color_nav"
+            onclick="cambio_color(this)"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only color_nav">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+            onclick="cambio_color(this)"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <section>
+          <div class="d-flex justify-content-center">
+            <h2>Mapa de kanto</h2>
+          </div>
+          <div class="d-flex justify-content-center color p-3">
+            <img
+              src="./css/img/kanto.png"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="Pokédex" class="bg-rojo">
+      <div class="container mt-4">
+        <div class="d-flex justify-content-center">
+          <h3 class="h2">Pokédex</h3>
+        </div>
+        <div class="d-flex">
+          <form class="form-inline justify-content-center">
+            <div class="from-group mb-2">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-primary my-2 my-sm-0"
+                type="submit"
+              >
+                Buscar
+              </button>
+            </div>
+            <div class="form-group mr-sm-2 tipos">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="normalCheck"
+                  value="normal"
+                />
+                <label class="form-check-label" for="normalCheck">Normal</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--card Pokemon -->
+      <div class="">
+        <div class="container">
+          <div class="row row-cols-2 row-col justify-content-start iner_pokemon">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-rojo">
+        © 2020 Copyright:
+        <a class="text-dark" href="Despues poner elncae de git">Pablo ramos</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script charset="utf-8" src="./javascript/index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>
